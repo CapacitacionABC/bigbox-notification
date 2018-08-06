@@ -19,6 +19,7 @@ body{
 	height: 100%;
 	background-color: black;
 	opacity: 0.4;
+	display: none;
 
 	z-index: 99998;
 }
@@ -30,12 +31,10 @@ body{
 	left: 200px;
 	width: 600px;
 	/*height: 400px;*/
-
-
-
+	display: none;
+	opacity: 0;
 	background-color: #f4f4f4;
 	border:1px solid #a9a9a9;
-
 	z-index: 99999;
 }
 

@@ -20,40 +20,31 @@
 </head>
 <body>
 
-	<div class="bigBox-fondo"></div>
-
-
-	<div class="bigBox-contenedor" align="center">
-
-		<div class="bigBox-cerrar"><i class="fas fa-times"></i></div>
-
-		<div class="bigBox-circulo"><i class="far fa-thumbs-up fa-3x"></i></div>
-
-		<div class="bigBox-contenido">
-			<span class="bigBox-titulo">Genial</span>
-			<span class="bigBox-texto">Estamos listos para procedes usando vTiger CRM a gestionar</span>
-		</div>
-
-		<button class="bigBox-boton">Empezar Curso</button>
-	</div>
-
-
 	<div class="container">
 		
 		<h1>BigBox: <small>Notification</small></h1>
 		<hr>
 
+		<button class="btn btn-primary">Mostrar BigBox</button>
+	</div> 
 
-	</div>
+<script src="js/bigbox.js"></script>
 
+<script>
+	$("button").on("click", function(){
 
-
-
-
-
-
-
-
+		$.bigbox({
+			fa: "fab fa-codiepie",
+			titulo: "Desade Boton",
+			contenido: "Este es el contenido del BigBox"
+		}, function( boton ){
+			
+			console.log( boton );
+			
+		});	
+		
+	})
+</script>
 
 </body>
 </html>
